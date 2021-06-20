@@ -23,7 +23,7 @@ const switchNavigator = createSwitchNavigator({
   BottomTab: {screen: AppTabNavigator}
 })
 
-const AppContainer=createAppContainer(AppTabNavigator)
+const AppContainer=createAppContainer(switchNavigator)
 
 const styles = StyleSheet.create({
   container: {
