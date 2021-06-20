@@ -95,8 +95,8 @@ export default class ViewGoalsScreen extends React.Component {
             {this.state.goals.length === 0 
             ? (
               <View style={styles.subContainer}>
-                <Text style={{ fontSize: 20 }}>
-                  List Of Tasks
+                <Text style={{ fontSize: 17 }}>
+                  You Currently Have No Tasks
                 </Text>
               </View>
             ) 
@@ -115,8 +115,10 @@ export default class ViewGoalsScreen extends React.Component {
 const styles = StyleSheet.create({
   subContainer: {
     flex: 1,
-    fontSize: 20,
+    fontSize: 10,
     justifyContent: 'center',
     alignItems: 'center',
+    alignSelf: 'center',
+    marginTop: 100
   },
 });
