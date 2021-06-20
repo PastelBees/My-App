@@ -42,7 +42,7 @@ return alert(errorMessage)
       LogIn=(emailId, password)=>{
         firebase.auth().signInWithEmailAndPassword(emailId, password)
         .then(()=>{
-          this.props.navigation.navigate("SetGoal")
+          this.props.navigation.navigate("ViewGoal")
          // alert("Successfully Logged In!")
         })
 
